@@ -1,0 +1,16 @@
+<div>
+  <h3><span>Category Page</span></h3>
+</div>
+
+<br>
+<div>
+  <select (change)="getCategory($event.target)">
+    <option value="">-- select category --</option>
+    <option *ngFor="let category of allCategories" value={{category.id}}>{{category.name}}</option>
+  </select>
+</div>
+
+<br>
+<div class="container">
+  <h4>Category:<span>{{categoryName}}</span></h4>
+</div>
